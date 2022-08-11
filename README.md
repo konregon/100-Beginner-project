@@ -28,7 +28,8 @@
  -->note:- make video play as soon as user click on trailer button.
 
  12.Blurred Background Popup
- 13.
+
+ 13.Background Image Scroll Effect
  14.
  15.
  16.
