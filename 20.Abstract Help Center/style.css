@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+
+.topbarContainer{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    background-color: #000000;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+#Abstract{
+    color: #fff;
+}
+#helpCenter{
+    color: #fff;
+}
