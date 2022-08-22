@@ -148,3 +148,87 @@ body {
     width: 100%;
 }
 
+.playerModel .head {
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #000 inset;
+    height: 35px;
+    margin: auto;
+    width: 35px;
+}
+
+.playerModel .head[data="false"] {
+    display: none;
+}
+
+.playerModel .body {
+    background-color: #000;
+    height: 45px;
+    margin: auto;
+    width: 2px;
+}
+
+.playerModel .body[data="false"] {
+    display: none;
+}
+
+.playerModel .body:before, .playerModel .body:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 30px;
+    position: absolute;
+    width: 2px;
+}
+
+.playerModel .body[l="false"]:before, .playerModel .body[r="false"]:after {
+    display: none;
+}
+
+.playerModel .body:before {
+    left: 27px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.playerModel .body:after {
+    right: 26px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.playerModel .foot {
+    background-color: #000;
+    height: 3px;
+    margin: auto;
+    width: 2px;
+}
+
+.playerModel .foot[data="false"] {
+    display: none;
+}
+
+.playerModel .foot:before, .playerModel .foot:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    width: 2px;
+}
+
+.playerModel .foot[l="false"]:before, .playerModel .foot[r="false"]:after {
+    display: none;
+}
+
+.playerModel .foot:before {
+    left: 30px;
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+}
+
+.playerModel .foot:after {
+    right: 29px;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+}
+
