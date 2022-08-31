@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-container{
+    display: flex;
+}
+.nav-list{
+    width: 50%;
+    background: yellow;
+}
+.nav-list li{
+
+}
+
+.nav-list li a{
+
+}
+
+.rightNav{
+    width: 50%;
+    background: dodgerblue;
+}
