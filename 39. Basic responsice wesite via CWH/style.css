@@ -22,20 +22,36 @@
 .nav-list{
     display: flex;
     width: 50%;
-    background: black;
     align-items: center;
 }
 .nav-list li{
     list-style: none;
+    padding: 20px 20px;
 }
 
 .nav-list li a{
     text-decoration: none;
     color: white;
+    transition: 0.3s;
+}
+.nav-list li a:hover{
+    color: red;
 }
 
 .rightNav{
     width: 50%;
-    background: dodgerblue;
     text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('images/3.png');
+    background-size: cover;
+    background-blend-mode: darken;
 }
