@@ -55,3 +55,11 @@
     background-size: cover;
     background-blend-mode: darken;
 }
+
+
+.box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
