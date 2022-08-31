@@ -7,19 +7,35 @@
 .flex-container{
     display: flex;
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.logo img{
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
 .nav-list{
+    display: flex;
     width: 50%;
-    background: yellow;
+    background: black;
+    align-items: center;
 }
 .nav-list li{
-
+    list-style: none;
 }
 
 .nav-list li a{
-
+    text-decoration: none;
+    color: white;
 }
 
 .rightNav{
     width: 50%;
     background: dodgerblue;
+    text-align: right;
 }
