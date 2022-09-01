@@ -56,10 +56,51 @@
     background-blend-mode: darken;
 }
 
-
+.firstSection{
+    height: 100vh;
+}
 .box-main{
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+}
+
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.secondHalf{
+}
+.secondHalf img{
+    display: block;    
+    margin: auto;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.text-big{
+    font-size: 40px;
+}
+.text-small{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border:  2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+}
+.btn-sm{
+    padding: 8px 20px;
+    border:  1px solid white;
+
 }
