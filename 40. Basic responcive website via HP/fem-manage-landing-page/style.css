@@ -122,6 +122,17 @@ svg {
 }
 
 /* Utility classes */
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
 
 .text-primary-400 {
   color: var(--clr-primary-400);
@@ -225,7 +236,7 @@ body{
   color: var(--clr-neutral-100);
   background-color: var(--clr-accent-400);
 }
-..button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:hover,
 .button[data-type="inverted"]:focus-visible {
   color: var(--clr-neutral-300);
   background-color: var(--clr-accent-400);
@@ -233,4 +244,40 @@ body{
 .button:hover,
 .button:focus-visible {
   background-color: var(--clr-accent-300);
+}
+
+
+/* navigation */
+
+.primary-header{
+  margin-top: var(--size-700);
+  display: flex;
+}
+
+.nav-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+  }
+  
+  .mobile-nav-toggle{
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+  
+  .mobile-nav-toggle .icon-close{
+    display: none;
+  }
 }
