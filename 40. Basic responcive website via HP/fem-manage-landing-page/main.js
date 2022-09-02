@@ -1,6 +1,10 @@
-const navToggle = document.querySelector("mobile-nav-toggle");
+const primaryHeader = document.querySelector(".primary-header");
+const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
 navToggle.addEventListener('click', ()=> {
-    primaryNav.toggleAttribute('data-visible');
+    primaryNav.toggleAttribute("data-visible")
+        ? navToggle.setAttribute("aria-expanded", false)
+        : navToggle.setAttribute("aria-expanded", true);
+    primaryHeader.toggleAttribute('data-overlay');
 })
