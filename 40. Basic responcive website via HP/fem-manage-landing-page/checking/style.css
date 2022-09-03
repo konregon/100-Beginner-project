@@ -46,10 +46,9 @@
   @media (min-width: 50em) {
     :root {
       --fs-body: var(--fs-500);
+    --fs-nav: var(--fs-300);
       --fs-primary-heading: var(--fs-900);
       --fs-secondary-heading: var(--fs-800);
-  
-      --fs-nav: var(--fs-300);
     }
   }
   
@@ -178,8 +177,8 @@
   
   .nav-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
   
   .mobile-nav-toggle {
@@ -209,12 +208,11 @@
   @media (max-width: 50em) {
     .primary-navigation {
       display: none;
-  
       position: fixed;
       padding: var(--size-700);
-      inset: 7rem var(--size-400) auto;
       max-width: 25rem;
       margin-left: auto;
+    inset: 7rem var(--size-400) auto;
       background: var(--clr-neutral-100);
       border-radius: var(--size-100);
       box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -224,8 +222,7 @@
       content: "";
       position: fixed;
       inset: 0;
-      /* height: 100vh; */
-      background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+    background-image: linear-gradient(rgb(0 0 0 /0 ) rgb(0 0 0/0.8)); 
     }
   
     .nav-list {
@@ -240,11 +237,11 @@
     }
   
     .mobile-nav-toggle {
-      display: block;
       position: fixed;
       top: var(--size-600);
       right: var(--size-400);
       cursor: pointer;
+      display: block;
       background: transparent;
       border: 0;
       padding: 0.5em;
@@ -256,7 +253,6 @@
   }
   
   /* Utility classes */
-  
   .visually-hidden {
     position: absolute;
     width: 1px;
