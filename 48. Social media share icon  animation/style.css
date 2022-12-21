@@ -63,3 +63,39 @@ html {
 .share:focus {
     outline-color: inherit;
 }
+
+.twitter:hover,
+.twitter:focus {
+    color: #00aced;
+    box-shadow: 0 0 24px 0 #00aced;
+}
+
+.github:hover,
+.github:focus {
+    color: #4183c4;
+    box-shadow: 0 0 24px 0 #4183c4;
+}
+
+.pinterest:hover,
+.pinterest:focus {
+    color: #bd081c;
+    box-shadow: 0 0 24px 0 #bd081c;
+}
+
+.youtube:hover,
+.youtube:focus {
+    color: #cd201f;
+    box-shadow: 0 0 24px 0 #cd201f;
+}
+
+.facebook:hover,
+.facebook:focus {
+    color: #3b5998;
+    box-shadow: 0 0 24px 0 #3b5998;
+}
+
+.google:hover,
+.google:focus {
+    color: #dd4b39;
+    box-shadow: 0 0 24px 0 #dd4b39;
+}
