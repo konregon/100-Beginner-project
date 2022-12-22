@@ -42,3 +42,56 @@ body {
     background-color: #2C3E50;
     border: 0px;
 }
+
+@media (min-width: 768px) {
+    .num {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .num {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .num {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .text {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 75px;
+    }
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        margin-bottom: 75px;
+        font-size: 100px;
+    }
+}
