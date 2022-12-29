@@ -28,3 +28,52 @@ a {
     cursor: pointer;
     /* hand symbol */
 }
+
+/* body */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #6B2A7E;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+    /* vertically center */
+    text-align: center;
+}
+
+/* container */
+.container {
+    width: 450px;
+    padding: 50px 20px;
+    /* top-bottom left-right */
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* h1 */
+h1 {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* .joke-text */
+.joke-text {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+/* .new-joke-btn */
+.new-joke-btn {
+    background-color: #FF0000;
+}
+
+/* .tweet-btn link */
+.tweet-btn {
+    background-color: #00ACEE;
+}
