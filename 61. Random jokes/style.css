@@ -1,0 +1,30 @@
+/* common styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    /* top-bottom left-right */
+    margin: 0 5px;
+    /* top-bottom left-right */
+    font-size: 0.99rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: blue;
+    /* default color */
+}
+
+.btn:hover {
+    cursor: pointer;
+    /* hand symbol */
+}
