@@ -1,0 +1,85 @@
+Html,
+Body {
+    Height: 100%;
+}
+
+Body {
+    Background: #1b1e23;
+    Display: Flex;
+    Flex-Direction: Column;
+    Justify-Content: Center;
+    Align-Items: Center;
+    Font-Family: Sans-Serif;
+    Color: White;
+}
+
+P {
+    Color: #f4eed7;
+    Font-Size: 0.8em;
+    Opacity: 0.75;
+}
+
+.Clock {
+    Height: 200px;
+    Width: 200px;
+    Border-Radius: 100px;
+    Display: Flex;
+    Justify-Content: Center;
+    Position: Relative;
+}
+
+.Clock__second,
+.Clock__minute,
+.Clock__hour,
+.Clock__indicator {
+    Position: Absolute;
+    Left: Calc(49.9895833333%);
+    Width: 2px;
+    Background: #f4eed7;
+    Transform-Origin: Bottom Center;
+    Z-Index: 2;
+    Border-Radius: 1px;
+}
+
+.Clock__second {
+    Height: 90px;
+    Margin-Top: 10px;
+    Background: #4b9aaa;
+    Animation: Time 60s Infinite Steps(60);
+    Z-Index: 3;
+}
+
+.Clock__minute {
+    Height: 80px;
+    Margin-Top: 20px;
+    Opacity: 0.75;
+    Animation: Time 3600s Linear Infinite;
+}
+
+.Clock__hour {
+    Height: 60px;
+    Margin-Top: 40px;
+    Animation: Time 43200s Linear Infinite;
+}
+
+.Clock__indicator {
+    Height: 98px;
+    Border-Top: 2px Solid #4b9aaa;
+    Background: None;
+}
+
+.Clock__indicator:nth-Of-Type(5n) {
+    Opacity: 1;
+    Height: 93px;
+    Border-Top: 7px Solid #f4eed7;
+}
+
+.Clock__axis {
+    Background: #4b9aaa;
+    Width: 5px;
+    Height: 5px;
+    Border-Radius: 3px;
+    Position: Absolute;
+    Z-Index: 4;
+    Top: 97px;
+}
