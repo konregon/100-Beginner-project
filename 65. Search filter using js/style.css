@@ -1,0 +1,101 @@
+* {
+    Margin: 0;
+    Padding: 0;
+}
+
+.Content {
+    Display: Flex;
+    Flex-Direction: Column;
+    Align-Items: Center;
+}
+
+.Heading {
+    Font-Size: 40px;
+    Font-Weight: 800;
+    Margin: 60px Auto;
+}
+
+.Cateogaries {
+    Display: Flex;
+    Flex-Wrap: Wrap;
+}
+
+.Ctitle:active {
+    Background-Color: rgba(255, 0, 0, 0.9);
+}
+
+.Cateogaries .Ctitle {
+    Margin: 10px;
+    Border: 2px Solid Red;
+    Padding: 10px 25px;
+    Border-Radius: 8px;
+}
+
+A {
+    Text-Decoration: None;
+    Color: black;
+}
+
+.Container {
+    Display: Flex;
+    Flex-Wrap: Wrap;
+    Width: 80%;
+    Justify-Content: center;
+    Margin: 20px;
+}
+
+.Items {
+    Width: 200px;
+    Height: 300px;
+    Display: flex;
+    Border: 2px Solid Red;
+    Padding: 4px;
+    Border-Radius: 10px;
+    Margin: 20px;
+    Flex-Direction: Column;
+}
+
+.Img {
+    Width: 200px;
+    Height: 200px;
+}
+
+.Title {
+    Font-Size: 20px;
+}
+
+.Cateogary {
+    Text-Align: Center;
+    Margin: 10px 0px;
+}
+
+.Details {
+    Display: Flex;
+    Justify-Content: Space-Between;
+    Width: 100%;
+}
+
+.Items:hover {
+    Background-Color: Red;
+    Color: white;
+    Transition-Duration: 0.7s;
+    Box-Shadow: 8px 8px 10px Rgba(255, 0, 0, 0.4);
+    Transform: translate(-8px, -8px);
+}
+
+.Items:hover .Img {
+    Transform: Scale(1.2);
+    Transition-Duration: 1s;
+}
+
+.Img-Conatiner {
+    Height: 200px;
+    Width: 200px;
+    Overflow: Hidden;
+}
+
+.Cateogaries .Ctitle:hover {
+    Transform: Translate(3px, -5px);
+    Transition-Duration: 0.7s;
+    Box-Shadow: 5px 5px 10px Rgba(255, 0, 0, 0.5);
+}
