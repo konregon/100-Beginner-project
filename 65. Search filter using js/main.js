@@ -266,3 +266,61 @@ const Food = [
     Cateogary: "DRINKS",
   },
 ];
+
+cateogaries=Document.QuerySelector(".Cateogaries");  
+ Container=Document.QuerySelector(".Container");  
+ 
+Window.AddEventListener("DOMContentLoaded",Function(){  
+   FilterMenu("ALL")  
+   var Cat=Food.Reduce(Function(Values,Items){  
+ If(!Values.Includes(Items.Cateogary)){  
+   Values.Push(Items.Cateogary);  
+ }  
+ Return Values;  
+   },["ALL"])  
+   Var CatBtn=Cat.Map(Function(Item){  
+     Return`<A Href="#" Class="Ctitle ${Item}">${Item}</A>`;  
+   })  
+    Var CatBtns=CatBtn.Join("")  
+   Cateogaries.InnerHTML=CatBtns;  
+   Var Button=Document.GetElementsByClassName("Ctitle")  
+ For(Var I=0;I<Button.Length;I++){  
+     Button[I].AddEventListener("Click",(E)=>{  
+ Var Val=E.Target.ClassName.Split(" ");  
+ FilterMenu(Val[1])  
+     })  
+   }})  
+ Function DisplayMenu(Food){  
+   Var DisplayMenu=Food.Map(Function(Item){  
+     Return(  
+       `<Div Class="Items">  
+       <Div Class="Img-Conatiner"><Img Src=${Item.Img}  
+       Alt="${Item.Title}" Class="Img"></Div>   
+        <Div Class="Details">  
+          <Div Class="Title">${Item.Name}</Div>  
+          <Div Class="Price">$${Item.Price}</Div>  
+         </Div>  
+       <Div Class="Cateogary">${Item.Cateogary}</Div>  
+     </Div>`)  
+   })  
+   DisplayMenu=DisplayMenu.Join("");  
+   Container.InnerHTML=DisplayMenu  
+ }  
+ Var Lists=Food.Reduce(Function(Values,Items){  
+   If(!Values.Includes(Items.Cateogary)){  
+     Values.Push(Items.Cateogary);  
+   }  
+   Return Values;  
+     },["ALL"]);  
+ Function FilterMenu(Cateogary){  
+    Var Filter1=Food.Filter(Function(Item){  
+ If(Item.Cateogary===Cateogary){  
+   Return Item;  
+ }})  
+ If(Cateogary==="ALL"){  
+   DisplayMenu(Food);  
+ }  
+ Else{  
+   DisplayMenu(Filter1);  
+ }  
+ }  
