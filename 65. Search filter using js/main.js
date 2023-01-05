@@ -270,38 +270,38 @@ const Food = [
 cateogaries=Document.QuerySelector(".Cateogaries");  
  Container=Document.QuerySelector(".Container");  
  
-Window.AddEventListener("DOMContentLoaded",Function(){  
-   FilterMenu("ALL")  
+Window.AddEventListener("DOMContentLoaded"),Function() {
+   FilterMenu("ALL")
    var Cat=Food.Reduce(Function(Values,Items){  
  If(!Values.Includes(Items.Cateogary)){  
-   Values.Push(Items.Cateogary);  
+   Values.Push(Items.Cateogary)
  }  
- Return Values;  
+ return Values;  
    },["ALL"])  
-   Var CatBtn=Cat.Map(Function(Item){  
+   var CatBtn=Cat.Map(Function(Item){  
      Return`<A Href="#" Class="Ctitle ${Item}">${Item}</A>`;  
    })  
-    Var CatBtns=CatBtn.Join("")  
+    var CatBtns=CatBtn.Join("")  
    Cateogaries.InnerHTML=CatBtns;  
-   Var Button=Document.GetElementsByClassName("Ctitle")  
+   var Button=Document.GetElementsByClassName("Ctitle")  
  For(Var I=0;I<Button.Length;I++){  
      Button[I].AddEventListener("Click",(E)=>{  
- Var Val=E.Target.ClassName.Split(" ");  
+ var Val=E.Target.ClassName.Split(" ");  
  FilterMenu(Val[1])  
      })  
    }})  
  Function DisplayMenu(Food){  
-   Var DisplayMenu=Food.Map(Function(Item){  
+   var DisplayMenu=Food.Map(Function(Item){  
      Return(  
-       `<Div Class="Items">  
-       <Div Class="Img-Conatiner"><Img Src=${Item.Img}  
+       `<div Class="Items">  
+       <div Class="Img-Conatiner"><Img Src=${Item.Img}  
        Alt="${Item.Title}" Class="Img"></Div>   
-        <Div Class="Details">  
-          <Div Class="Title">${Item.Name}</Div>  
-          <Div Class="Price">$${Item.Price}</Div>  
-         </Div>  
-       <Div Class="Cateogary">${Item.Cateogary}</Div>  
-     </Div>`)  
+        <div Class="Details">  
+          <div Class="Title">${Item.Name}</div>  
+          <div Class="Price">$${Item.Price}</div>  
+         </div>  
+       <div Class="Cateogary">${Item.Cateogary}</div>  
+     </div>`)  
    })  
    DisplayMenu=DisplayMenu.Join("");  
    Container.InnerHTML=DisplayMenu  
