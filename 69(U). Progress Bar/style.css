@@ -14,4 +14,23 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress {
+    background-color: #3498db;
+
 }
