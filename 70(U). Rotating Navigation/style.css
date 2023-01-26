@@ -68,6 +68,24 @@ body {
     transform-origin: top left;
 }
 
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+}
+
 .content img {
     max-width: 100%;
 }
