@@ -17,26 +17,66 @@
     flex-direction: column;
 }
 
+.bottom-container {
+    display: flex;
+}
+
 .title {
     width: 20rem;
     height: 4rem;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
 }
 
 
 .clock-digits {
-    width: 20rem;
-    height: 4rem;
-    background-color: bisque;
+    /* width: 20rem; */
+    /* height: 4rem; */
+    /* background-color: bisque; */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.time {
+    margin: 1rem;
+}
+
 .number {
     background-color: orange;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.hour-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: darkorange;
+    text-transform: uppercase;
+}
+
+.am-pm {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 1rem;
+    background-color: yellowgreen;
+    /* Jugad karyo 6. What is proper way to position this? */
+    margin-top: 7rem;
+    text-transform: uppercase;
 }
