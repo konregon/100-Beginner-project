@@ -8,6 +8,8 @@
 
     --hover-width: 75%;
     --other-width: 25%;
+
+    --speed: 1000ms;
 }
 
 * {
@@ -45,6 +47,7 @@ body {
     padding: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .split.left .btn:hover {
@@ -96,6 +99,13 @@ h1 {
     background-size: cover;
 }
 
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::before {
+    transition: all var(--speed) ease-in-out;
+}
+
 .split.right::before {
     content: '';
     position: absolute;
@@ -118,4 +128,15 @@ h1 {
 
 .hover-right .left {
     width: var(--other-width);
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 1.1rem;
+        width: 10rem;
+    }
 }
